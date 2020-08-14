@@ -85,6 +85,4 @@ class Mark
 
         return $this;
     }
-
-
 }

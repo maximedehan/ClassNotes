@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="" />
+    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="update of workspace.xml (2)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccueilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccueilController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AverageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AverageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MarkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MarkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/accueil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/average/average.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/average/average.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mark/mark.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mark/mark.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/student.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/student.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +38,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="Create of workspace.xml" />
+        <option name="rewordedMessage" value="Create of workspace.xml&#10;&#10;&#10;Execute &quot;composer require annotations&quot; command&#10;&#10;&#10;Creation of main screens&#10;&#10;&#10;Creation of first form (student add)&#10;&#10;update of workspace.xml (2)" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="40fdce3082d814d481bd4f5b292d597759ad541c" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -113,6 +141,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g0k8eZSG5GBOdjFSj4YcHhY6bI" />
@@ -124,9 +154,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/student" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\templates\student" />
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\templates\mark" />
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\templates\average" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\src\Controller" />
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\src\Controller\student" />
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\src\Controller\mark" />
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\src\Controller\average" />
+      <recent name="C:\Users\Maxime Dehan\ClassNotes\src\Controller\accueil" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -138,37 +182,193 @@
       <updated>1597258751147</updated>
       <workItem from="1597258756087" duration="467000" />
       <workItem from="1597259409623" duration="17777000" />
-      <workItem from="1597339635510" duration="2727000" />
+      <workItem from="1597339635510" duration="20184000" />
+      <workItem from="1597494977221" duration="365000" />
+      <workItem from="1597577021056" duration="26748000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1597408997437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597408997465</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First commit (2)">
+      <created>1597409221101</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597409221101</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Execute &quot;composer require annotations&quot; command">
+      <created>1597413908898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597413908898</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creation of main screens">
+      <created>1597426656438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597426656439</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creation of first form (student add) but it does not work for the moment.">
+      <created>1597606186023</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597606186023</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Creation of first form (student add). It works !">
+      <created>1597611252981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597611252999</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Creation of first form (student add). It works ! (2)">
+      <created>1597613864675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597613864675</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Some elements screens updates">
+      <created>1597620551968</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597620551968</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update of workspace.xml">
+      <created>1597683115397</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597683115397</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update of workspace.xml (2)">
+      <created>1597683171558</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597683171558</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Create of workspace.xml" />
+    <MESSAGE value="Execute &quot;composer require annotations&quot; command" />
+    <MESSAGE value="Creation of main screens" />
+    <MESSAGE value="Creation of first form (student add) but it does not work for the moment." />
+    <MESSAGE value="Creation of first form (student add). It works !" />
+    <MESSAGE value="Creation of first form (student add). It works ! (2)" />
+    <MESSAGE value="Some elements screens updates" />
+    <MESSAGE value="update of workspace.xml" />
+    <MESSAGE value="update of workspace.xml (2)" />
+    <MESSAGE value="Creation of first form (student add)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update of workspace.xml (2)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="437" y="188" key="#Notifications" timestamp="1597406950001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1597406950001" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597603796311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597603796311" />
+    <state x="-71" y="0" width="1334" height="728" key="CommitChangelistDialog2" timestamp="1597683312341">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-71" y="0" width="1334" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597683312341" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1597408415033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597408415033" />
+    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog" timestamp="1597683418228">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597683418228" />
+    <state x="525" y="264" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1597683449097">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="525" y="264" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597683449097" />
     <state x="559" y="262" key="Github.ShareDialog" timestamp="1597406933017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="559" y="262" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1597406933017" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1597425157890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597425157890" />
+    <state x="496" y="66" key="RollbackChangesDialog" timestamp="1597606926470">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="496" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597606926470" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1597408756211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597408756211" />
-    <state x="-117" y="0" width="1164" height="728" key="find.popup" timestamp="1597276531240">
+    <state x="483" y="277" key="VCS.ChangelistChooser" timestamp="1597409169939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-117" y="0" width="1164" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597276531240" />
-    <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597408723230">
+    <state x="483" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1597409169939" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597683492202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="484" y="270" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597408723230" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597683492202" />
+    <state x="11" y="0" width="1164" height="728" key="find.popup" timestamp="1597611664029">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="11" y="0" width="1164" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597611664029" />
+    <state x="484" y="270" width="740" height="187" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597409392688">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="484" y="270" width="740" height="187" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597409392688" />
   </component>
 </project>
