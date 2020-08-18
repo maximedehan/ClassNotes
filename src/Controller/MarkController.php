@@ -11,7 +11,7 @@ class MarkController extends AbstractController
     /**
      * @Route("/mark", name="mark")
      */
-    public function mark(): Response
+    public function view(): Response
     {
         return $this->render('mark/mark.html.twig');
     }

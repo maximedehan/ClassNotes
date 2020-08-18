@@ -5,20 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="update of workspace.xml (2)">
+    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccueilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccueilController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AverageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AverageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MarkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MarkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accueil/accueil.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/accueil.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/average/average.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/average/average.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mark/mark.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mark/mark.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/student.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/student.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/delete.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +29,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitRewordedCommitMessages">
-    <option name="commitMessagesMapping">
-      <RewordedCommitMessageMapping>
-        <option name="originalMessage" value="Create of workspace.xml" />
-        <option name="rewordedMessage" value="Create of workspace.xml&#10;&#10;&#10;Execute &quot;composer require annotations&quot; command&#10;&#10;&#10;Creation of main screens&#10;&#10;&#10;Creation of first form (student add)&#10;&#10;update of workspace.xml (2)" />
-      </RewordedCommitMessageMapping>
-    </option>
-    <option name="currentCommit" value="1" />
     <option name="onto" value="40fdce3082d814d481bd4f5b292d597759ad541c" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -184,7 +166,7 @@
       <workItem from="1597259409623" duration="17777000" />
       <workItem from="1597339635510" duration="20184000" />
       <workItem from="1597494977221" duration="365000" />
-      <workItem from="1597577021056" duration="26748000" />
+      <workItem from="1597577021056" duration="44139000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1597408997437</created>
@@ -256,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597683171558</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="qreztzrez">
+      <created>1597685345405</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597685345405</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Creation of table for student + delete action">
+      <created>1597712028709</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1597712028709</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +307,9 @@
     <MESSAGE value="update of workspace.xml" />
     <MESSAGE value="update of workspace.xml (2)" />
     <MESSAGE value="Creation of first form (student add)" />
-    <option name="LAST_COMMIT_MESSAGE" value="update of workspace.xml (2)" />
+    <MESSAGE value="qreztzrez" />
+    <MESSAGE value="Creation of table for student + delete action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of table for student + delete action" />
   </component>
   <component name="WindowStateProjectService">
     <state x="437" y="188" key="#Notifications" timestamp="1597406950001">
@@ -322,18 +320,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597603796311" />
-    <state x="-71" y="0" width="1334" height="728" key="CommitChangelistDialog2" timestamp="1597683312341">
+    <state x="32" y="0" width="1334" height="728" key="CommitChangelistDialog2" timestamp="1597712024871">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-71" y="0" width="1334" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597683312341" />
+    <state x="32" y="0" width="1334" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597712024871" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1597408415033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597408415033" />
-    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog" timestamp="1597683418228">
+    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog" timestamp="1597685370769">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597683418228" />
+    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597685370769" />
     <state x="525" y="264" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1597683449097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -358,14 +356,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="483" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1597409169939" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597683492202">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597685385265">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597683492202" />
-    <state x="11" y="0" width="1164" height="728" key="find.popup" timestamp="1597611664029">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597685385265" />
+    <state x="-86" y="0" width="1164" height="728" key="find.popup" timestamp="1597711702498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="11" y="0" width="1164" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597611664029" />
+    <state x="-86" y="0" width="1164" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597711702498" />
     <state x="484" y="270" width="740" height="187" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597409392688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -7,12 +7,39 @@
 {% block content %}
 
     <h1>Gestion des élèves</h1>
-    <div>
-        <ul class="nav nav-pills nav-stacked">
-            <li><a href="{{ path('student_add') }}">Ajouter un élève</a></li>
-            <li><a href="{{ path('student') }}">Supprimer un élève</a></li>
-            <li><a href="{{ path('student') }}">Modifier les informations d'un élève</a></li>
-        </ul>
-    </div>
+    <br>
+    <a class="btn btn-success btn-sm" href="{{ path('student_add') }}" role="button">
+            Ajouter un élève
+    </a>
+    <br>
+
+    {% if students is defined %}
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+                <tr>
+                    <td>{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.firstname}}</td>
+                    <td>{{student.birthday}}</td>
+                    <td class="actions">
+                        <a class="btn btn-info btn-sm" href="{{ path('student_update', {'id': student.id }) }}" role="button">Modifier</a>
+                        <a class="btn btn-danger btn-sm" href="{{ path('student_delete', {'id': student.id }) }}" role="button">Supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
 
 {% endblock %}

@@ -11,7 +11,7 @@ class AverageController extends AbstractController
     /**
      * @Route("/average", name="average")
      */
-    public function average(): Response
+    public function view(): Response
     {
         return $this->render('average/average.html.twig');
     }

@@ -3,26 +3,25 @@
 namespace App\Controller;
 
 use App\Entity\Student;
+use App\Repository\StudentRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 class StudentController extends AbstractController
 {
     /**
      * @Route("/student", name="student")
      */
-    public function student(): Response
+    public function view(StudentRepository $studentRepository): Response
     {
-        return $this->render('student/student.html.twig');
+        $students = $studentRepository->findAll();
+
+        return $this->render('student/student.html.twig', ['students' => $students]);
     }
 
     /**
@@ -64,8 +63,27 @@ class StudentController extends AbstractController
         }
 
         // Dans le cas d'un formulaire invalide
-        return $this->render('student/add.html.twig', array(
-            'form' => $form->createView(),
-        ));
+        return $this->render('student/add.html.twig', ['form' => $form->createView()]);
+    }
+
+    /**
+     * @Route("/student/update/{id}", name="student_update")
+     */
+    public function updateAction(Student $student)
+    {
+
+    }
+
+    /**
+     * @Route("/student/delete/{id}", name="student_delete")
+     */
+    public function deleteAction(Student $student)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $em->remove($student);
+        $em->flush();
+
+        return $this->redirectToRoute('student');
     }
 }
