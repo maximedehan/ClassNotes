@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Student
@@ -39,6 +40,7 @@ class Student
      * @var string|null
      *
      * @ORM\Column(name="birthday", type="string", length=255, nullable=true)
+     * @Assert\Regex(pattern="/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i", match=true, message="La date doit être sous la forme DD/MM/AAAA.")
      */
     private $birthday;
 

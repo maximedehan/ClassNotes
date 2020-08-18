@@ -13,7 +13,7 @@
     </a>
     <br>
 
-    {% if students is defined %}
+    {% if students is defined and students|length > 0 %}
     <br>
     <table class="table table-striped">
         <thead>
@@ -40,6 +40,8 @@
             {% endfor %}
         </tbody>
     </table>
+    {% else %}
+        <br>Vous n'avez aucun élève enregistré.
     {% endif %}
 
 {% endblock %}

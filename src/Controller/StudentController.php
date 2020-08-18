@@ -69,9 +69,26 @@ class StudentController extends AbstractController
     /**
      * @Route("/student/update/{id}", name="student_update")
      */
-    public function updateAction(Student $student)
+    public function updateAction(Student $student, Request $request)
     {
+        $em = $this->getDoctrine()->getManager();
 
+        $form = $this->createFormBuilder($student, [])
+            ->add('firstname',       TextType::class, array('required' => true))
+            ->add('name',   TextType::class, array('required' => true))
+            ->add('birthday',   TextType::class, array('required' => false))
+            ->add('save',      SubmitType::class)
+            ->getForm()
+        ;
+
+        if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $em->flush();
+            $request->getSession()->getFlashBag()->add('notice', 'Elève bien modifié.');
+
+            return $this->redirectToRoute('student');
+        }
+
+        return $this->render('student/update.html.twig', ['form' => $form->createView()]);
     }
 
     /**

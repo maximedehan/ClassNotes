@@ -5,9 +5,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="">
+    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="Creation of update action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/delete.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/student.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/student.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitRewordedCommitMessages">
-    <option name="onto" value="40fdce3082d814d481bd4f5b292d597759ad541c" />
+    <option name="onto" value="6c93746da863c8cbe5637a816382a89a4337a2f7" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -166,7 +167,8 @@
       <workItem from="1597259409623" duration="17777000" />
       <workItem from="1597339635510" duration="20184000" />
       <workItem from="1597494977221" duration="365000" />
-      <workItem from="1597577021056" duration="44139000" />
+      <workItem from="1597577021056" duration="44316000" />
+      <workItem from="1597771796115" duration="8154000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1597408997437</created>
@@ -252,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597712028709</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Creation of table for student + delete action (2)">
+      <created>1597712427675</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597712427675</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Creation of update action">
+      <created>1597776802530</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1597776802542</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +312,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="First commit" />
     <MESSAGE value="Create of workspace.xml" />
     <MESSAGE value="Execute &quot;composer require annotations&quot; command" />
@@ -309,7 +326,9 @@
     <MESSAGE value="Creation of first form (student add)" />
     <MESSAGE value="qreztzrez" />
     <MESSAGE value="Creation of table for student + delete action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of table for student + delete action" />
+    <MESSAGE value="Creation of table for student + delete action (2)" />
+    <MESSAGE value="Creation of update action" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of update action" />
   </component>
   <component name="WindowStateProjectService">
     <state x="437" y="188" key="#Notifications" timestamp="1597406950001">
@@ -320,18 +339,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597603796311" />
-    <state x="32" y="0" width="1334" height="728" key="CommitChangelistDialog2" timestamp="1597712024871">
+    <state x="-188" y="0" width="1334" height="728" key="CommitChangelistDialog2" timestamp="1597785838139">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="32" y="0" width="1334" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597712024871" />
+    <state x="-188" y="0" width="1334" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597785838139" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1597408415033">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597408415033" />
-    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog" timestamp="1597685370769">
+    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog" timestamp="1597712447740">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597685370769" />
+    <state x="232" y="60" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597712447740" />
     <state x="525" y="264" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1597683449097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -356,14 +375,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="483" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1597409169939" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597685385265">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597776819748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597685385265" />
-    <state x="-86" y="0" width="1164" height="728" key="find.popup" timestamp="1597711702498">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597776819748" />
+    <state x="107" y="0" width="1164" height="728" key="find.popup" timestamp="1597786325980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-86" y="0" width="1164" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597711702498" />
+    <state x="107" y="0" width="1164" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597786325980" />
     <state x="484" y="270" width="740" height="187" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597409392688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
