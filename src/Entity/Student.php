@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -44,6 +45,15 @@ class Student
      */
     private $birthday;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Mark", mappedBy="student")
+     */
+    private $marks;
+
+    public function __construct() {
+        $this->marks = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -83,5 +93,10 @@ class Student
         $this->birthday = $birthday;
 
         return $this;
+    }
+
+    public function getMarks(): ArrayCollection
+    {
+        return $this->marks;
     }
 }

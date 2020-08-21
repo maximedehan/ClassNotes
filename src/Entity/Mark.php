@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Mark
@@ -22,9 +23,10 @@ class Mark
     private $id;
 
     /**
-     * @var float
      *
      * @ORM\Column(name="value", type="float", nullable=false)
+     * @Assert\Type(type="float")
+     * @Assert\Regex(pattern="/^([0-9]|0[0-9]|1[0-9])(\.\d+)|20|0$/i", match=true, message="La note doit être un nombre compris entre 0 et 20")
      */
     private $value;
 
@@ -36,14 +38,12 @@ class Mark
     private $lesson;
 
     /**
-     * @var \Student
-     *
-     * @ORM\ManyToOne(targetEntity="Student")
+     * @ORM\ManyToOne(targetEntity="Student", inversedBy="marks")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="id_student", referencedColumnName="id")
      * })
      */
-    private $idStudent;
+    private $student;
 
     public function getId(): ?int
     {
@@ -74,14 +74,14 @@ class Mark
         return $this;
     }
 
-    public function getIdStudent(): ?Student
+    public function getStudent(): ?Student
     {
-        return $this->idStudent;
+        return $this->student;
     }
 
-    public function setIdStudent(?Student $idStudent): self
+    public function setStudent(?Student $student): self
     {
-        $this->idStudent = $idStudent;
+        $this->student = $student;
 
         return $this;
     }

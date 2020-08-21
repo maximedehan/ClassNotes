@@ -7,5 +7,43 @@
 {% block content %}
 
     <h1>Gestion des notes</h1>
+    <br>
+    <a class="btn btn-success btn-sm" href="{{ path('mark_add') }}" role="button">
+        Affecter une note à un élève
+    </a>
+    <br>
+
+    {% if marks is defined and marks|length > 0 %}
+        <br>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom élève</th>
+                <th>Prénom élève</th>
+                <th>Matière</th>
+                <th>Note</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for mark in marks %}
+                <tr>
+                    <td>{{mark.id}}</td>
+                    <td>{{mark.student.name}}</td>
+                    <td>{{mark.student.firstname}}</td>
+                    <td>{{mark.lesson}}</td>
+                    <td>{{mark.value}}</td>
+                    <td class="actions">
+                        <a class="btn btn-info btn-sm" href="{{ path('mark_update', {'id': mark.id }) }}" role="button">Modifier</a>
+                        <a class="btn btn-danger btn-sm" href="{{ path('mark_delete', {'id': mark.id }) }}" role="button">Supprimer</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <br>Vous n'avez aucune note enregistrée.
+    {% endif %}
 
 {% endblock %}

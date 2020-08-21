@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Gestion des notes
+{% endblock %}
+
+{% block content %}
+
+    <h3>Formulaire de saisie des notes</h3>
+    <br>
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+{% endblock %}
