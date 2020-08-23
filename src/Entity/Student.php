@@ -2,8 +2,8 @@
 
 namespace App\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\PersistentCollection;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -50,10 +50,6 @@ class Student
      */
     private $marks;
 
-    public function __construct() {
-        $this->marks = new ArrayCollection();
-    }
-
     public function getId(): ?int
     {
         return $this->id;
@@ -95,7 +91,7 @@ class Student
         return $this;
     }
 
-    public function getMarks(): ArrayCollection
+    public function getMarks(): PersistentCollection
     {
         return $this->marks;
     }

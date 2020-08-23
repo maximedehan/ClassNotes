@@ -7,6 +7,7 @@ use App\Repository\StudentRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -14,20 +15,29 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 class StudentController extends AbstractController
 {
+    private $studentRepository;
+
+    public function __construct(StudentRepository $studentRepository)
+    {
+        $this->studentRepository = $studentRepository;
+    }
+
     /**
      * @Route("/student", name="student")
      */
-    public function view(StudentRepository $studentRepository): Response
+    public function view(): Response
     {
-        $students = $studentRepository->findAll();
+        $students = $this->studentRepository->findAll();
 
         return $this->render('student/student.html.twig', ['students' => $students]);
     }
 
     /**
+     * @param Request $request
+     * @return RedirectResponse|Response
      * @Route("/student/add", name="student_add")
      */
-    public function addAction(Request $request)
+    public function add(Request $request)
     {
         // On crée un objet Student
         $student = new Student();
@@ -67,9 +77,12 @@ class StudentController extends AbstractController
     }
 
     /**
+     * @param Request $request
+     * @param Student $student
+     * @return RedirectResponse|Response
      * @Route("/student/update/{id}", name="student_update")
      */
-    public function updateAction(Student $student, Request $request)
+    public function update(Request $request, Student $student)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -92,11 +105,17 @@ class StudentController extends AbstractController
     }
 
     /**
+     * @param Student $student
+     * @return RedirectResponse
      * @Route("/student/delete/{id}", name="student_delete")
      */
-    public function deleteAction(Student $student)
+    public function delete(Student $student)
     {
         $em = $this->getDoctrine()->getManager();
+
+        foreach ($student->getMarks() as $mark) {
+            $this->redirectToRoute('mark_delete', ['id' => $mark->getId()]);
+        }
 
         $em->remove($student);
         $em->flush();

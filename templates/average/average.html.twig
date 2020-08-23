@@ -6,6 +6,34 @@
 
 {% block content %}
 
-    <h1>Calcul des moyennes par élèves</h1>
+    <h3>Calcul de la moyenne générale par élève</h3>
+    <br>
+    Veuillez choisir l'élève dont vous souhaitez connaître la moyenne générale.
+    <br>
+    Moyenne générale de la classe : {{ average_class }}
+    <br><br>
+    {{ form_start(form_student) }}
+        {{ form_errors(form_student) }}
+        {{ form_widget(form_student) }}
+    {{ form_end(form_student) }}
+    {% if marks_student is defined %}
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Matière</th>
+                <th>Note</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for mark in marks_student %}
+                <tr>
+                    <td>{{ mark.lesson }}</td>
+                    <td>{{ mark.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        Moyenne générale de l'élève : {{ average_student }}
+    {% endif  %}
 
 {% endblock %}

@@ -26,7 +26,7 @@ class Mark
      *
      * @ORM\Column(name="value", type="float", nullable=false)
      * @Assert\Type(type="float")
-     * @Assert\Regex(pattern="/^([0-9]|0[0-9]|1[0-9])(\.\d+)|20|0$/i", match=true, message="La note doit être un nombre compris entre 0 et 20")
+     * @Assert\Regex(pattern="/^([0-1]?[0-9])([,.][0-9][0-9]?)?$|^(20)$/i", match=true, message="La note doit être un nombre décimal avec 2 chiffres après la virgule au maximum et compris entre 0 et 20")
      */
     private $value;
 

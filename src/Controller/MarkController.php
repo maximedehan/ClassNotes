@@ -5,14 +5,12 @@ namespace App\Controller;
 use App\Entity\Mark;
 use App\Entity\Student;
 use App\Repository\MarkRepository;
-use App\Repository\StudentRepository;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -20,20 +18,29 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 class MarkController extends AbstractController
 {
+    private $markRepository;
+
+    public function __construct(MarkRepository $markRepository)
+    {
+        $this->markRepository = $markRepository;
+    }
+
     /**
      * @Route("/mark", name="mark")
      */
-    public function view(MarkRepository $markRepository): Response
+    public function view(): Response
     {
-        $marks = $markRepository->findAll();
+        $marks = $this->markRepository->findAll();
 
         return $this->render('mark/mark.html.twig', ['marks' => $marks]);
     }
 
     /**
+     * @param Request $request
+     * @return RedirectResponse|Response
      * @Route("/mark/add", name="mark_add")
      */
-    public function addAction(Request $request)
+    public function add(Request $request)
     {
         $mark = new Mark();
 
@@ -68,9 +75,12 @@ class MarkController extends AbstractController
     }
 
     /**
+     * @param Request $request
+     * @param Mark $mark
+     * @return RedirectResponse|Response
      * @Route("/mark/update/{id}", name="mark_update")
      */
-    public function updateAction(Mark $mark, Request $request)
+    public function update(Request $request, Mark $mark)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -98,9 +108,11 @@ class MarkController extends AbstractController
     }
 
     /**
+     * @param Mark $mark
+     * @return RedirectResponse
      * @Route("/mark/delete/{id}", name="mark_delete")
      */
-    public function deleteAction(Mark $mark)
+    public function delete(Mark $mark)
     {
         $em = $this->getDoctrine()->getManager();
 
