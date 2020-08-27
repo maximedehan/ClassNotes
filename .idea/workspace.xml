@@ -5,10 +5,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="">
+    <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="corrections on regex">
+      <change afterPath="$PROJECT_DIR$/src/DataPersister/MarkPersister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataPersister/StudentPersister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ClassNotes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ClassNotes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Mark.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Mark.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/MarkHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/MarkHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccueilController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accueil/accueil.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +32,7 @@
     <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitRewordedCommitMessages">
-    <option name="onto" value="c5f7c02013f24734772cad45cf15a5e75ff30654" />
+    <option name="onto" value="7680b21ea009bd57c27463c561d4ec1d52359f45" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -120,6 +128,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gPxBcLhjSL5dDy8JJtPzgmbukO" />
@@ -129,9 +139,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/LocalHost" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LocalHost" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -152,7 +163,9 @@
       <workItem from="1598029937305" duration="22275000" />
       <workItem from="1598095899970" duration="25009000" />
       <workItem from="1598184365574" duration="18466000" />
-      <workItem from="1598305239210" duration="2064000" />
+      <workItem from="1598305239210" duration="4258000" />
+      <workItem from="1598465712381" duration="13400000" />
+      <workItem from="1598561008824" duration="6157000" />
     </task>
     <task id="LOCAL-00002" summary="Creation of mark screens">
       <created>1598054302014</created>
@@ -175,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598207973385</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="corrections on regex">
+      <created>1598309475760</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598309475760</updated>
+    </task>
+    <task id="LOCAL-00006" summary="First use of API">
+      <created>1598487464974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598487465005</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,48 +250,58 @@
     <MESSAGE value="Creation of mark screens" />
     <MESSAGE value="Creation of average screens + code cleaning" />
     <MESSAGE value="Use of delete route mark + corrections on regex" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use of delete route mark + corrections on regex" />
+    <MESSAGE value="corrections on regex" />
+    <MESSAGE value="First use of API" />
+    <option name="LAST_COMMIT_MESSAGE" value="First use of API" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Deployment" timestamp="1597880486106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1597880486106" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598487380410">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598487380410" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598195822689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598195822689" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1598207970936">
+    <state x="29" y="138" width="1229" height="590" key="CommitChangelistDialog2" timestamp="1598571897872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598207970936" />
+    <state x="29" y="138" width="1229" height="590" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598571897872" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1598309870411">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1598309870411" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1597858342769">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597858342769" />
-    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog" timestamp="1597856800976">
+    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog" timestamp="1598309753620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1597856800976" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1598192122760">
+    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1598309753620" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1598570650364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1598192122760" />
-    <state x="474" y="66" key="RollbackChangesDialog" timestamp="1597856921080">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1598570650364" />
+    <state x="474" y="66" key="RollbackChangesDialog" timestamp="1598487548370">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="474" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597856921080" />
+    <state x="474" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598487548370" />
     <state x="530" y="277" key="VCS.ChangelistChooser" timestamp="1597856712218">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1597856712218" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598208002205">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598310682325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598208002205" />
-    <state x="390" y="97" width="687" height="534" key="find.popup" timestamp="1598039183543">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598310682325" />
+    <state x="390" y="97" width="687" height="534" key="find.popup" timestamp="1598571741060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="687" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598039183543" />
+    <state x="390" y="97" width="687" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598571741060" />
   </component>
 </project>

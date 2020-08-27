@@ -23,7 +23,7 @@
     <div class="row">
         <div id="menu" class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
-                <li><a href="{{ path('accueil') }}">Accueil</a></li>
+                <li><a href="{{ path('index') }}">Accueil</a></li>
                 <li><a href="{{ path('student') }}">Gestion des élèves</a></li>
                 <li><a href="{{ path('mark') }}">Gestion des notes</a></li>
                 <li><a href="{{ path('average') }}">Calcul des moyennes</a></li>
@@ -32,6 +32,12 @@
         <div id="content" class="col-md-9">
             {% block content %}
                 <h3>Bienvenue sur votre plateforme de gestion de classes !</h3>
+                <br>
+                <p>Cette plateforme vous offre aussi la possibilité de visualiser les routes de notre API ! ;)</p>
+                <br>
+                <a class="btn btn-primary" href="api" role="button">
+                    ClassNotes API routes
+                </a>
             {% endblock %}
         </div>
     </div>

@@ -3,13 +3,16 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * Mark
  *
  * @ORM\Table(name="mark", indexes={@ORM\Index(name="id_student", columns={"id_student"})})
  * @ORM\Entity
+ * @ApiResource
  */
 class Mark
 {
@@ -19,6 +22,7 @@ class Mark
      * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @Groups("mark:read")
      */
     private $id;
 
@@ -27,6 +31,7 @@ class Mark
      * @ORM\Column(name="value", type="float", nullable=false)
      * @Assert\Type(type="float")
      * @Assert\Regex(pattern="/^([0-1]?[0-9])([,.][0-9][0-9]?)?$|^(20)$/i", match=true, message="La note doit être un nombre décimal avec 2 chiffres après la virgule au maximum et compris entre 0 et 20")
+     * @Groups("mark:read")
      */
     private $value;
 
@@ -34,6 +39,7 @@ class Mark
      * @var string
      *
      * @ORM\Column(name="lesson", type="string", length=255, nullable=false)
+     * @Groups("mark:read")
      */
     private $lesson;
 
