@@ -40,7 +40,7 @@ class MarkHelper
         return round($average/count($marks),2);
     }
 
-    public function getAverageByStudent(Student $student): float
+    public function getAverageByStudent(Student $student): string
     {
         $marks = $student->getMarks()->getValues();
         $average = 0;
@@ -49,6 +49,6 @@ class MarkHelper
             $average = $average + $mark->getValue();
         }
 
-        return round($average/count($marks), 2);
+        return count($marks) > 0 ? strval(round($average/count($marks), 2)) : 'Cet élève n\'a aucune note saisie';
     }
 }
