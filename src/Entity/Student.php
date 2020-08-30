@@ -53,7 +53,7 @@ class Student
     private $birthday;
 
     /**
-     * @ORM\OneToMany(targetEntity="Mark", mappedBy="student")
+     * @ORM\OneToMany(targetEntity="Mark", mappedBy="student", cascade={"persist"})
      */
     private $marks;
 

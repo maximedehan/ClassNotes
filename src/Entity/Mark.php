@@ -49,11 +49,18 @@ class Mark
      *   @ORM\JoinColumn(name="id_student", referencedColumnName="id")
      * })
      */
-    private $student;
+    public $student;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function setId(?int $id): self
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     public function getValue(): ?float
