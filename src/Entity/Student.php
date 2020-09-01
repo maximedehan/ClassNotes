@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\PersistentCollection;
 use ApiPlatform\Core\Annotation\ApiResource;
@@ -57,6 +58,11 @@ class Student
      */
     private $marks;
 
+    public function __construct()
+    {
+        $this->marks = new ArrayCollection();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -98,7 +104,7 @@ class Student
         return $this;
     }
 
-    public function getMarks(): PersistentCollection
+    public function getMarks()
     {
         return $this->marks;
     }

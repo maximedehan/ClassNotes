@@ -7,8 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7a39d08d-0ea0-49d7-9617-ddd87c5eeafa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AverageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AverageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Service/MarkHelperTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Service/MarkHelperTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,14 @@
     <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitRewordedCommitMessages">
-    <option name="onto" value="edf697dcfe7f2e5d1f1f86d2d17158f039ad1e09" />
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="First API works (2)" />
+        <option name="rewordedMessage" value="Transform application interface into API" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="32880bf95a44e2bf923e2781ebb508ae2fa42a17" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,12 +129,9 @@
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
-      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gPxBcLhjSL5dDy8JJtPzgmbukO" />
@@ -139,9 +143,15 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../LocalHost" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -165,7 +175,10 @@
       <workItem from="1598465712381" duration="13400000" />
       <workItem from="1598561008824" duration="7570000" />
       <workItem from="1598791001053" duration="6992000" />
-      <workItem from="1598798872775" duration="11746000" />
+      <workItem from="1598798872775" duration="13965000" />
+      <workItem from="1599001036636" duration="2815000" />
+      <workItem from="1599081580996" duration="13696000" />
+      <workItem from="1599153775625" duration="7602000" />
     </task>
     <task id="LOCAL-00002" summary="Creation of mark screens">
       <created>1598054302014</created>
@@ -223,7 +236,28 @@
       <option name="project" value="LOCAL" />
       <updated>1598807076508</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="First API works (4)">
+      <created>1598812365534</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598812365534</updated>
+    </task>
+    <task id="LOCAL-00011" summary="First unit test (2)">
+      <created>1599090346660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599090346660</updated>
+    </task>
+    <task id="LOCAL-00012" summary="First unit test (3)">
+      <created>1599094779614</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599094779614</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,64 +306,75 @@
     <MESSAGE value="Creation of average screens + code cleaning" />
     <MESSAGE value="Use of delete route mark + corrections on regex" />
     <MESSAGE value="corrections on regex" />
-    <MESSAGE value="First use of API" />
+    <MESSAGE value="Include of ApiPlateform" />
     <MESSAGE value="First API works" />
     <MESSAGE value="First API works (2)" />
     <MESSAGE value="First API works (3)" />
-    <option name="LAST_COMMIT_MESSAGE" value="First API works (3)" />
+    <MESSAGE value="First API works (4)" />
+    <MESSAGE value="First unit test (2)" />
+    <MESSAGE value="First unit test (3)" />
+    <option name="LAST_COMMIT_MESSAGE" value="First unit test (3)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Deployment" timestamp="1597880486106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Deployment/0.0.1366.728@0.0.1366.728" timestamp="1597880486106" />
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598487380410">
+    <state x="483" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599096093691">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598487380410" />
+    <state x="483" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599096093691" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598806238794">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598806238794" />
-    <state x="29" y="13" width="1323" height="715" key="CommitChangelistDialog2" timestamp="1598807072924">
+    <state x="30" y="13" width="1323" height="715" key="CommitChangelistDialog2" timestamp="1599094774079">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="29" y="13" width="1323" height="715" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1598807072924" />
+    <state x="30" y="13" width="1323" height="715" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599094774079" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1598309870411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1598309870411" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1597858342769">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1599095812772">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597858342769" />
-    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog" timestamp="1598574488135">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599095812772" />
+    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog" timestamp="1598812572000">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1598574488135" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1598805548899">
+    <state x="175" y="47" key="Git.Interactive.Rebase.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1598812572000" />
+    <state x="526" y="264" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1598812436901">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1598805548899" />
-    <state x="474" y="66" key="RollbackChangesDialog" timestamp="1598736525363">
+    <state x="526" y="264" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1598812436901" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1599090715017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="474" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598736525363" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1599090715017" />
+    <state x="474" y="66" key="RollbackChangesDialog" timestamp="1599004189079">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="474" y="66" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1599004189079" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1599003891601">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599003891601" />
     <state x="530" y="277" key="VCS.ChangelistChooser" timestamp="1597856712218">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="277" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1597856712218" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598310682325">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1599004232353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598310682325" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599004232353" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598805911541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1598805911541" />
-    <state x="390" y="97" width="687" height="534" key="find.popup" timestamp="1598571741060">
+    <state x="389" y="193" width="687" height="534" key="find.popup" timestamp="1599178975766">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="97" width="687" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1598571741060" />
+    <state x="389" y="193" width="687" height="534" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599178975766" />
   </component>
 </project>
