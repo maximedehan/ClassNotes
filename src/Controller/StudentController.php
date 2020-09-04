@@ -149,13 +149,15 @@ class StudentController extends AbstractController
      */
     public function delete(Student $student)
     {
+        $em = $this->getDoctrine()->getManager();
+
         // On supprime toutes les notes de l'élève avant la suppression de l'élève
         foreach ($student->getMarks() as $mark) {
-            $this->redirectToRoute('mark_delete', ['id' => $mark->getId()]);
+            $em->remove($mark);
+            $em->flush();
         }
 
         // On supprime l'élève
-        $em = $this->getDoctrine()->getManager();
         $em->remove($student);
         $em->flush();
 

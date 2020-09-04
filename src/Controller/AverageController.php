@@ -59,7 +59,8 @@ class AverageController extends AbstractController
                 ['form_student' => $formStudent->createView(),
                  'average_class' => $averageClass,
                  'marks_student' => $arrayMarks,
-                 'average_student' => $averageStudent]
+                 'average_student' => $averageStudent,
+                 'student' => $student->getFirstname().' '.$student->getName()]
             );
         }
 
